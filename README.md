@@ -16,3 +16,18 @@ class Sujet(models.Model) :
 * models.DateTimeField() ::: Date fields with ```auto_now_add``` to specify the current time at the time of the update   
 * models.ImageField()   ::: Fields of type image with ```upload_to to``` define the path where the images will be saved. <br/>
  #### PS: Before using models.ImageField() as it should be. You must install the <a href="https://pypi.org/project/Pillow/">pillow module</a>
+ 
+ ## Many-to-one relational model django.  :floppy_disk: <a href="https://github.com/kirilinko/Models-Django/blob/main/class%20simple%20Django.py">Download</a> 
+```python
+from django.db import models
+  
+class Album(models.Model):
+    title = models.CharField(max_length = 100)
+    artist = models.CharField(max_length = 100)
+  
+class Song(models.Model):
+    title = models.CharField(max_length = 100)
+    album = models.ForeignKey(Album, on_delete = models.CASCADE)
+ ```
+ * models.ForeignKey() ::: Relational fields with ```Album``` the name of the model to which it is linked and ```on_delete = models.CASCADE``` to define the Many-to-one configuration
+
