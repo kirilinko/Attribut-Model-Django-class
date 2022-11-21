@@ -1,5 +1,4 @@
 Models-Django
-Classe Attribute Model Django per la creazione di un database relazionale
 
  
 ## Simple model django.  :floppy_disk: <a href="https://github.com/kirilinko/Models-Django/blob/main/class%20simple%20Django.py">Download</a> 
