@@ -97,7 +97,7 @@ class Car(models.Model):
 * ```TimeField``` : 	A time, represented in Python by a datetime.time instance.
 * ```URLField```	: A CharField for a URL, validated by URLValidator.
 
-## Field Options
+### Field Options
 * ```Null```	: If True, Django will store empty values as NULL in the database. Default is False.
 * ```Blank``` :	If True, the field is allowed to be blank. Default is False.
 * ```db_column```	: The name of the database column to use for this field. If this isn’t given, Django will use the field’s name. 
