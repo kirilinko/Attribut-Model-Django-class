@@ -4,6 +4,8 @@ Classe Attribute Model Django per la creazione di un database relazionale
  
 ## Simple model django.  :floppy_disk: <a href="https://github.com/kirilinko/Models-Django/blob/main/class%20simple%20Django.py">Download</a> 
 ```python
+from django.db import models
+
 class Sujet(models.Model) :
     title = models.CharField(max_length = 200)
     description = models.TextField()
