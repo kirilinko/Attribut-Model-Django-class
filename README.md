@@ -1,7 +1,7 @@
-Models-Django
+# :snake: Models-Django
 
  
-## Simple model django.  :floppy_disk: <a href="https://github.com/kirilinko/Models-Django/blob/main/class%20simple%20Django.py">Download</a> 
+## Simple model django 
 ```python
 from django.db import models
 
@@ -17,7 +17,7 @@ class Sujet(models.Model) :
 * models.ImageField()   ::: Fields of type image with ```upload_to to``` define the path where the images will be saved. <br/>
  #### PS: Before using models.ImageField() as it should be. You must install the <a href="https://pypi.org/project/Pillow/">pillow module</a>
  
- ## Many-to-one relational model django.
+ ## :family: :standing_person: Many-to-one relational model django.
 ```python
 from django.db import models
   
@@ -31,7 +31,7 @@ class Song(models.Model):
  ```
  * models.ForeignKey() ::: Relational fields with ```Album``` the name of the model to which it is linked and ```on_delete = models.CASCADE``` to define the Many-to-one configuration
  
- ## Many-to-many relational model django.
+ ## :wrestling: Many-to-many relational model django.
 ```python
 from django.db import models
   
@@ -46,7 +46,7 @@ class Book(models.Model):
  ```
  * models.ManyToManyField() ::: Relational fields with ```Album``` the name of the model to which it is linked
 
-## One-to-one relational model django.
+## :standing_person: :standing_person: One-to-one relational model django.
 ```python
 from django.db import models
   
